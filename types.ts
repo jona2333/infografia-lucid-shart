@@ -1,11 +1,11 @@
-// Fix: Added React import to resolve the 'Cannot find namespace 'JSX'' error.
 import React from 'react';
 
 export interface UmlElement {
   id: string;
   name: string;
   description: string;
-  svg: JSX.Element;
+  // FIX: Replaced JSX.Element with React.ReactElement to resolve "Cannot find namespace 'JSX'" error.
+  svg: React.ReactElement;
 }
 
 export interface UmlCategory {
