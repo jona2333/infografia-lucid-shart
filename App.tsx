@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { UML_CATEGORIES } from './constants';
 import { UmlElement } from './types';
@@ -53,7 +54,7 @@ const App: React.FC = () => {
 
         <footer className="text-center mt-16 py-6 border-t border-slate-700">
             <p className="text-slate-500 text-sm">
-                Creado con React, Tailwind CSS, y la magia de la IA.
+                made by el perro jona
             </p>
         </footer>
       </div>

@@ -2,11 +2,12 @@
 import React from 'react';
 import { UmlCategory } from './types';
 
-const IconWrapper = ({ children }: { children: React.ReactNode }) => (
+// FIX: Update IconWrapper to accept an optional className prop to resolve cloneElement error.
+const IconWrapper = ({ children, className }: { children: React.ReactNode; className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    className="w-12 h-12"
+    className={className || "w-12 h-12"}
     fill="none"
     stroke="currentColor"
     strokeWidth="1.5"
